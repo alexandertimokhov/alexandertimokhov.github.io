@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTS High Altitude Society</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #ffffff;
+            --text-color: #111111;
+            --accent-color: #0055ff;
+            --muted-color: #666666;
+            --border-color: #cccccc;
+            --terminal-bg: #f9f9f9;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 16px;
+            line-height: 1.6;
+            margin: 0;
+            padding: 40px 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            border: 1px solid var(--border-color);
+            padding: 30px;
+            background: var(--terminal-bg);
+            box-shadow: 4px 4px 0px var(--border-color);
+        }
+
+        .terminal-header {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px dashed var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+            color: var(--muted-color);
+            font-size: 0.9rem;
+        }
+
+        h1, h2, h3 {
+            color: var(--text-color);
+            font-weight: normal;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0 0 10px 0;
+            letter-spacing: 1px;
+        }
+
+        .prompt {
+            color: var(--accent-color);
+        }
+
+        .command {
+            color: var(--text-color);
+            font-weight: bold;
+        }
+
+        .output-block {
+            margin: 20px 0;
+            padding-left: 15px;
+            border-left: 2px solid var(--accent-color);
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        .image-wrapper {
+            margin: 25px 0;
+            border: 1px solid var(--border-color);
+            background: #ffffff;
+            padding: 10px;
+        }
+
+        .image-wrapper img {
+            width: 100%;
+            height: auto;
+            display: block;
+            filter: grayscale(20%) contrast(110%);
+        }
+
+        .image-caption {
+            font-size: 0.85rem;
+            color: var(--muted-color);
+            margin-top: 8px;
+            text-align: center;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 8px;
+            height: 16px;
+            background-color: var(--text-color);
+            animation: blink 1s infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        @keyframes blink {
+            0%, 50% { opacity: 1; }
+            51%, 100% { opacity: 0; }
+        }
+
+        footer {
+            margin-top: 40px;
+            border-top: 1px dashed var(--border-color);
+            padding-top: 15px;
+            font-size: 0.85rem;
+            color: var(--muted-color);
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="terminal-header">
+        <span><img src="utshas_logo.png" width =100></span>
+        <span></span>
+    </div>
+
+    <!-- Section 1: Intro -->
+    <div>
+        <h1>// UTSHAS</h1>
+        <p>A club at UTS (University of Toronto Schools). We launch weather balloons with various scientific missions!</p>
+    </div>
+
+    <!-- Embedded Image 1 -->
+    <div class="image-wrapper">
+        <iframe width="780" height="500" src="https://www.youtube.com/embed/p9zYoh_jR3Q?si=JR34ScFtpMjW9lyd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="image-caption">&gt;&gt; fig. 01: A promo video for our recent paper airplane world-record attempt</div>
+    </div>
+
+    <!-- Section 2: Objectives -->
+    <div class="output-block">
+        <span class="prompt">&gt;</span> <span class="command">cat ./utshas/docs/our_objectives.md</span>
+        <h3>Our objectives as a club:</h3>
+        <ul>
+            <li><strong>Teach the DIY ethic</strong> Show folks what people can do when they can do things themselves!</li>
+            <li><strong>Do cool science at home:</strong> Bring near-space to be more accessible to the general population like us.</li>
+            <li><strong>Push the boundaries:</strong> Pursue ambitious projects that challenge what people think is possible for a student-led club.</li>
+        </ul>
+    </div>
+
+    <!-- Embedded Image 2/3 -->
+    <div class="image-wrapper">
+        <img src="utshas_people.jpg" alt="heya, look at us!">
+        <div class="image-caption">&gt;&gt; fig. 02: The people of UTSHAS.</div>
+    </div>
+      <div class="image-wrapper">
+        <img src="utshas_pcb.png" alt="heya, look at this PCB!">
+        <div class="image-caption">&gt;&gt; fig. 03: Our OS-41 flight computer, custom built and assembled.</div>
+    </div>
+
+       <div class="output-block">
+        <span class="prompt">&gt;</span> <span class="command">cat ./utshas/docs/our_projects.md</span>
+        <h3>Projects in the past:</h3>
+        <ul>
+            <li><strong>UTS-1:</strong> <a href = "https://www.instagram.com/p/DKZ9RnMPP5g/" target="_blank">The very first flight in May 2025, taking the UTS logo to near-space!</a></li>
+            <li><strong>UTS-2:</strong> <a href = "https://www.instagram.com/p/DVy7119mlHS/" target="_blank">The second flight we did, this time with better avionics and custom power management.</a></li>
+            <li><strong>Mission Treechopper:</strong> <a href = "https://www.youtube.com/watch?v=_w0gtHuRiwY" target="_blank">Our attempt at the world-record for highest paper airplane throw</a></li>
+            <li><strong><a href = "https://sites.google.com/utschools.ca/utshighaltitudesociety/launches/uts-1-bob-1-launch" target="_blank">Check out more here.</a></strong> </li>
+        </ul>
+    </div>
+
+    <!-- Active Terminal Input Line -->
+    <div>
+        <span class="prompt">&gt;</span> <span class="command">Check us out! We meet in the I-Lab at lunch on Tuesdays and Thursdays_</span><span class="cursor"></span>
+    </div>
+
+    <footer>
+        [UTSHAS // 2026]
+    </footer>
+</div>
+
+</body>
+</html>

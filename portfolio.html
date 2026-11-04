@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stuff I've built!</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="icon" type="image/gif" href="icon.gif">
+</head>
+<body>
+
+    <main>
+       <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-container">
+                <div class="hero-text">
+                    <h1>Hi, I'm Sasha!</h1>
+                    <p>I'm a high school student by day, hobbyist builder at night from Toronto, Canada! 🇨🇦</p>
+                    <a href="#video-container" class="btn">Check out some stuff ↓↓↓</a>
+                </div>
+                <div class="hero-image">
+                    <img src="sasha_photo.jpg" alt="my school pic!">
+                </div>
+            </div>
+        </section>
+        <!-- Background Video Section/UTSHAS -->
+  
+        <section class="video-hero" id="video-container">
+            <!-- The video element with attributes for looping, muting, and autoplay -->
+            <video autoplay muted loop playsinline class="bg-video">
+                <source src="hero_utshas.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+
+            <!-- Dark overlay to make text readable over the video -->
+            <div class="video-overlay"></div>
+
+            <!-- Content container holding both image and text side by side -->
+            <div class="video-container">
+                <div class="video-image">
+                    <img src="utshas_logo.png" alt="UTSHAS Logo">
+                </div>
+                <div class="video-text">
+                    <h2>UTSHAS</h2>
+                    <p>This is a club that I founded and run at school, called UTS High Altitude Society. We build and launch weather balloon missions with custom hardware, involving avionics and custom PCB designs. Our most recent mission was an attempt to break the Guinness World Record for Highest Paper Airplane Throw!</p>
+                    <a href="./utshas.html" class="btn">See more here...</a>
+                </div>
+            </div>
+        </section>
+        <!-- TEDx Section -->
+        <section class="tedx-section">
+            <div class="tedx-container">
+                <div class="tedx-image">
+                    <img src="tedx.png" alt="TEDx Talk">
+                </div>
+                <div class="tedx-text">
+                    <h2>TEDxUTS Youth</h2>
+                    <p>I had the incredible opportunity to found and organize a TEDxYouth club at our school, bringing together a group of friends to build the initiative from the ground up. For three consecutive years, we have organized TEDxYouth UTS. It's really hard work -- months upon months of planning and collaboration. But every time it happens, it's unforgettable!</p>
+                    <a href="https://www.instagram.com/p/DUqfiaTkrf7/" class="btn">Check out a talk...</a>
+                </div>
+            </div>
+        </section>
+        <!-- Plane Self-Guidance -->
+        <section class="new-project-section">
+            <div class="new-project-container">
+                <div class="new-project-text">
+                    <h2>Fixed-Wing Autoguidance</h2>
+                    <p>A brand new thing I'm working on! I've never dabbled much with control theory before, and this will be the perfect introduction. The idea is to make one of my RC planes be able to self-navigate to various waypoints on its own, building the hardware and software stack from the ground up.</p>
+                    <a href="#" class="btn">More coming soon once I make a project page (Hang tight!)</a>
+                </div>
+                <div class="new-project-images">
+                    <img src="guidance3.png" alt="The RF Module">
+                    <img src="guidance2.png" alt="Beta schematicsz">
+                </div>
+            </div>
+        </section>
+
+    
+    </main>
+
+    <!--- FOOTER ---->
+<footer class="site-footer">
+        <div class="footer-container">
+            <p class="footer-text">Check out some even more things ↓↓↓</p>
+            <div class="footer-socials">
+                <a href="mailto:timsa@utschools.ca" class="footer-circle" title="Email"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+                <a href="https://github.com/radio-satellites/" target="_blank" class="footer-circle" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="resume_mar2026.pdf" target="_blank" class="footer-circle" title="My resume!"><i class="fa-regular fa-file"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
